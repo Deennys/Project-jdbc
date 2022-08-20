@@ -11,22 +11,22 @@ public class Seller implements Serializable {
 	private Integer id;
 	private String name;
 	private String email;
-	private Date birthday;
+	private Date birthDate;
 	private Double baseSalary;
 
-	private Departament departament;
+	private Department department;
 
 	public Seller() {
 	}
 	
-	public Seller(Integer id, String name, String email, Date birthday, Double baseSalary, Departament departament) {
+	public Seller(Integer id, String name, String email, Date birthDate, Double baseSalary, Department department) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
-		this.birthday = birthday;
+		this.birthDate = birthDate;
 		this.baseSalary = baseSalary;
-		this.departament = departament;
+		this.department = department;
 	}
 
 	public Integer getId() {
@@ -53,12 +53,12 @@ public class Seller implements Serializable {
 		this.email = email;
 	}
 
-	public Date getBirthday() {
-		return birthday;
+	public Date getBirthDate() {
+		return birthDate;
 	}
 
-	public void setBirthday(Date birthday) {
-		this.birthday = birthday;
+	public void setBirthDate(Date birthDate) {
+		this.birthDate = birthDate;
 	}
 
 	public Double getBaseSalary() {
@@ -69,12 +69,12 @@ public class Seller implements Serializable {
 		this.baseSalary = baseSalary;
 	}
 
-	public Departament getDepartament() {
-		return departament;
+	public Department getDepartment() {
+		return department;
 	}
 
-	public void setDepartament(Departament departament) {
-		this.departament = departament;
+	public void setDepartment(Department department) {
+		this.department = department;
 	}
 
 	@Override
@@ -96,7 +96,7 @@ public class Seller implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Seller [id=" + id + ", name=" + name + ", email=" + email + ", birthday=" + birthday + ", baseSalary="
-				+ baseSalary + ", departament=" + departament + "]";
+		return "Seller [id=" + id + ", name=" + name + ", email=" + email + ", birthDate=" + birthDate + ", baseSalary="
+				+ baseSalary + ", departament=" + department + "]";
 	}
 }

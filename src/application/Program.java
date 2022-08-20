@@ -1,6 +1,6 @@
 package application;
 
-import model.entities.Departament;
+import model.entities.Department;
 
 public class Program {
 
